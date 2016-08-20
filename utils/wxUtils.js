@@ -213,10 +213,10 @@ exports.getWxArticleData = function( url, callback ){
                             console.log( '------------' )
                             console.log( 'no date:'+'author:' + author.replace( reg, "" ) )
                             console.log( 'no date:'+'title:' + title.replace( reg, "" ) )
-                            //console.log('no date:'+articleDate.getFullYear() + ' ' + (articleDate.getMonth()+1) + ' ' + articleDate.getDate())
-                            //console.log( 'no date:'+'article.author:' + article.author.replace( reg, "" ) )
-                            //console.log( 'no date:'+'article.title:' + article.title.replace( reg, "" ) )
-                            //console.log('no date:'+compareDate.getFullYear() + ' ' + (compareDate.getMonth()+1) + ' ' + compareDate.getDate())
+                            console.log('no date:'+articleDate.getFullYear() + ' ' + (articleDate.getMonth()+1) + ' ' + articleDate.getDate())
+                            console.log( 'no date:'+'article.author:' + article.author.replace( reg, "" ) )
+                            console.log( 'no date:'+'article.title:' + article.title.replace( reg, "" ) )
+                            console.log('no date:'+compareDate.getFullYear() + ' ' + (compareDate.getMonth()+1) + ' ' + compareDate.getDate())
                             //过滤所有中文符号
                             //文章标题、作者、发布日期 三个条件的校验
                             if( article.title.replace( reg, "" ) == title.replace( reg, "" ) && article.author.replace( reg, "" ) == author.replace( reg, "" ) && articleDate.getFullYear() + ' ' + articleDate.getMonth() + ' ' + articleDate.getDate() == compareDate.getFullYear() + ' ' + compareDate.getMonth() + ' ' + compareDate.getDate() ){
@@ -293,10 +293,10 @@ exports.getWxArticleData = function( url, callback ){
                             console.log( 'have date:'+'------------' )
                             console.log('have date:'+ 'author:' + author.replace( reg, "" ) )
                             console.log( 'have date:'+'title:' + title.replace( reg, "" ) )
-                            //console.log('have date:'+articleDate.getFullYear() + ' ' + (articleDate.getMonth()+1) + ' ' + articleDate.getDate())
-                            //console.log('have date:'+ 'article.author:' + article.author.replace( reg, "" ) )
-                            //console.log('have date:'+ 'article.title:' + article.title.replace( reg, "" ) )
-                            //console.log('have date:'+compareDate.getFullYear() + ' ' + (compareDate.getMonth()+1) + ' ' + compareDate.getDate())
+                            console.log('have date:'+articleDate.getFullYear() + ' ' + (articleDate.getMonth()+1) + ' ' + articleDate.getDate())
+                            console.log('have date:'+ 'article.author:' + article.author.replace( reg, "" ) )
+                            console.log('have date:'+ 'article.title:' + article.title.replace( reg, "" ) )
+                            console.log('have date:'+compareDate.getFullYear() + ' ' + (compareDate.getMonth()+1) + ' ' + compareDate.getDate())
                             //过滤所有中文符号
                             //文章标题、作者、发布日期 三个条件的校验
                             if( article.title.replace( reg, "" ) == title.replace( reg, "" ) && article.author.replace( reg, "" ) == author.replace( reg, "" ) && articleDate.getFullYear() + ' ' + articleDate.getMonth() + ' ' + articleDate.getDate() == compareDate.getFullYear() + ' ' + compareDate.getMonth() + ' ' + compareDate.getDate() ){
