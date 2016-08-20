@@ -133,7 +133,7 @@ exports.getWxArticleData = function( url, callback ){
             }
         } );
     }, function( article, cb ){
-        console.log(article)
+        //console.log(article)
         result.title = article.title;
         result.author = article.author;
         result.date = article.date;
