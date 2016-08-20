@@ -210,9 +210,9 @@ exports.getWxArticleData = function( url, callback ){
                             var articleDate = new Date( parseInt( time + '000' ) );
                             //time.replace('vrTimeHandle552write(','').replace(')','');
                             var url = beforeUrl.replace( 'http://mp.weixin.qq.com/s', 'http://mp.weixin.qq.com/mp/getcomment' );
-                            //console.log( '------------' )
-                            //console.log( 'no date:'+'author:' + author.replace( reg, "" ) )
-                            //console.log( 'no date:'+'title:' + title.replace( reg, "" ) )
+                            console.log( '------------' )
+                            console.log( 'no date:'+'author:' + author.replace( reg, "" ) )
+                            console.log( 'no date:'+'title:' + title.replace( reg, "" ) )
                             //console.log('no date:'+articleDate.getFullYear() + ' ' + (articleDate.getMonth()+1) + ' ' + articleDate.getDate())
                             //console.log( 'no date:'+'article.author:' + article.author.replace( reg, "" ) )
                             //console.log( 'no date:'+'article.title:' + article.title.replace( reg, "" ) )
@@ -270,7 +270,7 @@ exports.getWxArticleData = function( url, callback ){
                 };
                 request( option, function( err, res, body ){
                     //console.log(err);
-                    console.log(body);
+                    //console.log(body);
                     var $ = cheerio.load( body );
                     var contentLeft = $( ".main" );
                     var links = $( '.results .txt-box' );
@@ -290,9 +290,9 @@ exports.getWxArticleData = function( url, callback ){
                             var articleDate = new Date( parseInt( time + '000' ) );
                             //time.replace('vrTimeHandle552write(','').replace(')','');
                             var url = beforeUrl.replace( 'http://mp.weixin.qq.com/s', 'http://mp.weixin.qq.com/mp/getcomment' );
-                            //console.log( 'have date:'+'------------' )
-                            //console.log('have date:'+ 'author:' + author.replace( reg, "" ) )
-                            //console.log( 'have date:'+'title:' + title.replace( reg, "" ) )
+                            console.log( 'have date:'+'------------' )
+                            console.log('have date:'+ 'author:' + author.replace( reg, "" ) )
+                            console.log( 'have date:'+'title:' + title.replace( reg, "" ) )
                             //console.log('have date:'+articleDate.getFullYear() + ' ' + (articleDate.getMonth()+1) + ' ' + articleDate.getDate())
                             //console.log('have date:'+ 'article.author:' + article.author.replace( reg, "" ) )
                             //console.log('have date:'+ 'article.title:' + article.title.replace( reg, "" ) )
